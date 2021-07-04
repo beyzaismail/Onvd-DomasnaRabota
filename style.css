@@ -1,0 +1,403 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* --------------------- HOME PAGE -------------------- */
+.header{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("images/banner_final.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 1.5% 6%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+nav img{
+    width: 150px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+
+}
+.nav-links ul li{
+    display: inline-block;
+    list-style-type: none;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    text-decoration: none;
+    color: #0d3c72;
+    font-size: 15px;
+    font-weight: bold;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: rgb(217,64,120);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text{
+    margin-top: 55px;
+    padding: 6% 6%;
+    text-align: center;
+    color: #fff;
+}
+.text h1{
+    font-size: 44px;
+    font-family: 'Montserrat', sans-serif;
+}
+.text p{
+    font-size: 17px;
+}
+.visit-btn{
+    font-family: 'Montserrat', sans-serif;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(217,64,120);
+    padding: 10px 30px;
+    border: 2px solid transparent;
+    border-radius: 40px;
+    margin-top: 20px;
+    transition: 0.5s;
+    font-weight: bold;
+}
+.visit-btn:hover{
+    border: 2px solid rgb(217,64,120);
+    background-color: white;
+    color: rgb(217,64,120);
+}
+
+/* Welcome */
+.row{
+    display: flex;
+    padding: 7% 6%;
+}
+.col-1{
+    width: 600px;
+}
+.col-2{
+    flex: 1;
+    text-align: center;
+    margin-top: 30px;
+}
+.section-header h1{
+    font-size: 30px;
+    margin-top: 12px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+#pink{
+    color: #0d3c72;
+}
+.features{
+    display: flex;
+}
+.features img{
+    padding: 30px 30px;
+}
+.feature-content h4{
+    padding-bottom: 10px;
+    padding-top: 30px;
+    font-size: 18px;
+    color: #00c2cb;
+    font-weight: 700;
+}
+.feature-content p{
+    font-size: 15px;
+    font-weight: 400;
+    color: #798696;
+}
+
+/* Featured Courses */
+.col-3{
+    min-width: 250px;
+    margin-bottom: 30px;
+    padding: 8px;
+    margin-right: 5px;
+    flex-basis: 25%;
+    transition: 0.5s;
+    margin-top: -30px;
+    border: 1px solid #d9d7d7;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.1);
+    border-radius: 5px;
+}
+.col-3 img{
+    width: 253px;
+    height: 200px;
+}
+.col-3 h3{
+    text-align: left;
+    padding: 30px 0;
+    color: #0d3c72;
+}
+.title{
+    text-align: center;
+    position: relative;
+    line-height: 60px;
+    font-size: 30px;
+}
+.title::after{
+    content: '';
+    background: rgb(217,64,120);
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    left: 50%;
+    position: absolute;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+.col-3:hover{
+    transform: translateY(-5px);
+}
+
+
+/* Footer */
+.footer{
+    padding: 60px 0 20px;
+    background-color: rgb(40,8,75);
+    margin-top: 70px;
+    color: white;
+}
+.footer-row{
+    display: flex;
+    padding: 0 6% 0 6%;
+}
+.footer h3{
+    color: white;
+    margin-bottom: 20px;
+}
+.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4{
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+.footer-col-1{
+    flex-basis: 30%;
+}
+.footer-col-2{
+    flex: 1;
+    text-align: center;
+}
+.footer-col-2 img{
+    width: 269px;
+    height: 81px;
+    margin-bottom: 20px;
+}
+.footer-col-3, .footer-col-4{
+    flex-basis: 12%;
+    text-align: center;
+}
+.footer ul{
+    list-style-type: none;
+}
+.footer ul li a{
+    text-decoration: none;
+    color: white;
+}
+.apps{
+    margin-top: 20px;
+}
+.apps img{
+    width: 140px;
+}
+.copyright{
+    text-align: center;
+}
+/* -----------------------------END OF HOME PAGE--------------------------- */
+
+
+/* ------------------------- ABOUT US PAGE ---------------------*/
+.about-header{
+    width: 100%;
+    min-height: 60vh;
+    background-image: linear-gradient(rgba(24,55,87,0.5),rgba(24,55,87,0.5)), url("images/banner_final.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.about-text{
+    margin-top: 55px;
+    padding: 6% 6%;
+    text-align: center;
+    color: white;
+}
+.about-text h1{
+    font-size: 44px;
+    font-family: 'Montserrat', sans-serif;
+}
+.about-text p{
+    font-size: 17px;
+}
+
+/* Welcome to Academy Education */
+.about-p{
+    margin-top: 50px;
+    text-align: left;
+    line-height: 25px;
+}
+.indent{
+    margin-top: 20px;
+    margin-left: 40px;
+    line-height: 29px;
+}
+
+/* My Skills Section */
+.skills-area{
+    display: flex;
+    flex-direction: column;
+    padding: 0 2%;
+}
+.skill{
+    position: relative;
+    margin-bottom: 20px;
+}
+.skill-title{
+    margin-bottom: 10px;
+}
+.skill-bar{
+    width: 100%;
+    background: rgba(255,255,255,0.6);
+    height: 40px;
+    z-index: -1;
+    position: absolute;
+    border-radius: 100px;
+}
+.skill-fill{
+    background: rgb(206,208,220);
+    height: 40px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 30px;
+    overflow: hidden;
+    border-radius: 100px;
+}
+.html{
+    width: 450px;
+}
+.css{
+    width: 450px;
+}
+.c{
+    width: 500px;
+}
+.c++{
+    width: 600px;
+}
+#myPic{
+    border-radius: 10px;
+}
+/* ------------------- END OF ABOUT US -------------------- */
+
+
+/* ------------------- CONTACT PAGE ----------------------- */
+.location{
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+}
+.location iframe{
+    width: 100%;
+}
+
+/* Contact Form */
+.contact-col{
+    flex-basis: 50%;
+    margin-bottom: 30px;
+}
+.col-5{
+    display: flex;
+    margin-bottom: 40px;
+    align-items: center;
+}
+.col-5 span{
+    margin-right: 40px;
+    font-size: 30px;
+    color: rgb(217,64,120);
+}
+.col-5 h5{
+    font-size: 17px;
+    margin-bottom: 5px;
+    font-weight: 400;
+}
+.col-5 p{
+    font-size: 15px;
+}
+.contact-col input ,.contact-col textarea{
+    width: 93%;
+    margin-bottom: 30px;
+    padding: 15px;
+    outline: none;
+    border: 1px solid #ccc;
+    font-family: 'Montserrat', sans-serif;
+}
+.contact-footer{
+    margin-top: -10px;
+}
+/* ------------------- END OF CONTACT -------------------- */
+
+/* ------------------- COURSES PAGE -------------------- */
+.course{
+    background-image: linear-gradient(rgba(24,55,87,0.5),rgba(24,55,87,0.5)), url("images/about_pic.jpg");
+}
+.courses-row, .courses-row-1{
+    display: flex;
+    padding: 0 6%;
+    padding-bottom: 20px;
+}
+.courses-row-1{
+    padding-top: 60px;
+    justify-content: space-between;
+}
+.material-icons-outlined{
+    font-size: 15px;
+    color: #00c2cb;
+}
+.course-title{
+    font-size: 15px;
+    font-weight: normal;
+}
+.featured-courses p{
+    font-weight: bold;
+}
+.courses-col-3{
+    border: none;
+    box-shadow: none;
+}
+
+.pg-btn span{
+    display: inline-block;
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #00c2cb;
+    text-align: center;
+    line-height: 40px;
+}
+.pg-btn span:hover{
+    background-color: #00c2cb;
+    color: white;
+}
